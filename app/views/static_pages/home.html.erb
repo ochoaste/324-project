@@ -1,7 +1,16 @@
 <% provide(:title, "Home") %>
-<h1>Sample App</h1>
-<p>
-  This is the home page for the
-  <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-  sample application.
-</p>
+<div class="center jumbotron">
+  <h1>Welcome to Adopt-A-CS-Major</h1>
+
+  <h2>
+    This is site meant to help bring CS and non CS majors together by having people willingly volunteer to adopt a CS major.  <br/>
+    <a href="https://www.freshu.io/tally-delong/5-things-computer-science-majors-are-tired-of-hearing" target="_blank">Learn about some CS major stereotypes!</a>
+
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<center>
+<%= link_to image_tag("chi-puppy.jpg", alt: "Chihuahua Puppy", :size => "340x220"),
+            'https://en.wikipedia.org/wiki/Chihuahua_(dog)' %>
+</center>
