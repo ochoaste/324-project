@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
   def home
+  	 names = %w[Steffie Linh Anya Liam]
+	 @result = names.shuffle.first
   end
 
   def help
@@ -10,4 +12,5 @@ class StaticPagesController < ApplicationController
  
   def contact
   end
+  
 end
