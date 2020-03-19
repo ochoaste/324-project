@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '5.2.3'
-gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-sass', '3.4.1'
 gem 'bootsnap'
 gem 'puma',         '3.9.1'
 gem 'sass-rails',   '5.0.6'
