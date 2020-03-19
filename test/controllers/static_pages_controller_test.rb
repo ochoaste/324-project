@@ -29,4 +29,11 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "Contact | #{@base_title}"
   end
+
+  test "random name not empty" do 
+    get root_path
+    assert_response :success
+    assert_not_empty (:result)
+  end
+
 end
