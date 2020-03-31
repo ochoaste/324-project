@@ -3,7 +3,7 @@ require 'test_helper'
 class AdopteeTest < ActiveSupport::TestCase
 
   def setup
-    @adoptee = Adoptee.new(name: "Example Adoptee", age: 22, email: "adoptee@example.com", personality: "Unknown")
+    @adoptee = Adoptee.new(name: "Example Adoptee", age: 22, email: "adoptee@example.com", personality: "Unknown", password: "foobar", password_confirmation: "foobar")
   end
 
   test "should be valid" do
@@ -45,6 +45,20 @@ test "email validation should reject invalid addresses" do
       @adoptee.email = invalid_address
       assert_not @adoptee.valid?, "#{invalid_address.inspect} should be invalid"
     end
+  end
+
+test "email addresses should be unique" do
+    duplicate_adoptee = @adoptee.dup
+    duplicate_adoptee.email = @adoptee.email.upcase
+    @adoptee.save
+    assert_not duplicate_adoptee.valid?
+  end
+
+test "email addresses should be saved as lower-case" do
+    mixed_case_email = "Foo@ExAMPle.CoM"
+    @adoptee.email = mixed_case_email
+    @adoptee.save
+    assert_equal mixed_case_email.downcase, @adoptee.reload.email
   end
 
   test "personiality should be present" do 
