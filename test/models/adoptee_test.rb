@@ -76,5 +76,14 @@ test "email addresses should be saved as lower-case" do
     assert_not @adoptee.valid? 
   end 
 
+ test "password should be present (nonblank)" do
+    @adoptee.password = @adoptee.password_confirmation = " " * 6
+    assert_not @adoptee.valid?
+  end
+
+  test "password should have a minimum length" do
+    @adoptee.password = @adoptee.password_confirmation = "a" * 5
+    assert_not @adoptee.valid?
+  end
 
 end
