@@ -1,4 +1,9 @@
 class UsersController < ApplicationController
-  def new
+
+def show
+    @adoptee = Adoptee.find(params[:id])
+  end
+  
+def new
   end
 end
