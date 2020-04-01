@@ -2,7 +2,8 @@ class UsersController < ApplicationController
 
 def show
     @adoptee = Adoptee.find(params[:id])
-  end
+#debugger 
+ end
   
 def new
   end
