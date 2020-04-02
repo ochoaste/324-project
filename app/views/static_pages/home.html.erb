@@ -1,6 +1,6 @@
 <% provide(:title, "Home") %>
 <div class="center jumbotron">
-  <h1>Welcome to Adopt-A-CS-Major</h1>
+  <h1>Welcome to <br> "Adopt A CS Major"</h1>
 
   <h2>
     This is site meant to help bring CS and non CS majors together by having people willingly volunteer to adopt a CS major.  <br/>
@@ -11,7 +11,11 @@
   </h2>
   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
+
+<figure>
 <center>
-<%= link_to image_tag("chi-puppy.jpg", alt: "Chihuahua Puppy", :size => "340x220"),
-            'https://en.wikipedia.org/wiki/Chihuahua_(dog)' %>
+<%= link_to image_tag("kids.jpg", alt: "CS Students", :size => "340x220"),
+            'http://www.cs.grinnell.edu/drupal6/curriculum.html' %>
+<figcaption>Image from Grinnell CS Website </figcaption>
 </center>
+</figure>
