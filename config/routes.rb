@@ -8,3 +8,4 @@ Rails.application.routes.draw do
   get  '/adoptees', to: 'adoptees#index' 
  resources :adoptees
  end
+
