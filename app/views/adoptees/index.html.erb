@@ -1,0 +1,11 @@
+<% provide(:title, 'All Adoptees') %>
+<h1>All Adoptees</h1>
+
+<ul class="users">
+  <% @adoptees.each do |adoptee| %>
+    <li>
+      <%= gravatar_for adoptee, size: 50 %>
+      <%= link_to adoptee.name, adoptees_path %>
+    </li>
+  <% end %>
+</ul>

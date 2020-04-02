@@ -1,9 +1,9 @@
-class UsersController < ApplicationController
+class AdopteesController < ApplicationController
 
 # before_action :logged_in_user, only: [:index, :edit, :update]
 
 def index
-  @users = Adoptee.all 
+  @adoptees = Adoptee.all 
  end
 
 def show

@@ -1,4 +1,4 @@
-module UsersHelper
+module AdopteesHelper
 
  # Returns the Gravatar for the given adoptee.
   def gravatar_for(adoptee, options = { size: 80 })
