@@ -11,7 +11,7 @@ def show
 #debugger 
  end
   
-#def new
-
- # end
+def new
+@adoptee = Adoptee.new
+end
 end
