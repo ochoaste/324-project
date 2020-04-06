@@ -14,4 +14,19 @@ def show
 def new
 @adoptee = Adoptee.new
 end
+
+def create
+    @adoptee = Adoptee.new(adoptee_params)
+    if @adoptee.save
+      # Handle a successful save.
+    else
+      render 'new'
+    end
+  end
+
+def adoptee_params
+      params.require(:adoptee).permit(:name, :age, :email, :personality,  :password,
+                                   :password_confirmation)
+    end
+
 end
