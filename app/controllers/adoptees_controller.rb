@@ -18,7 +18,8 @@ end
 def create
     @adoptee = Adoptee.new(adoptee_params)
     if @adoptee.save
-      # Handle a successful save.
+          flash[:success] = "You are soon on your way to being adopted!" 
+ redirect_to @adoptee
     else
       render 'new'
     end
