@@ -53,8 +53,6 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
-    bootstrap-will_paginate (0.0.10)
-      will_paginate
     builder (3.2.4)
     byebug (9.0.6)
     coderay (1.1.2)
@@ -132,7 +130,7 @@ GEM
     pry (0.13.0)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    puma (3.9.1)
+    puma (3.12.4)
     rack (2.2.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -213,7 +211,6 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
-    will_paginate (3.0.0)
 
 PLATFORMS
   ruby
@@ -222,7 +219,6 @@ DEPENDENCIES
   bcrypt (= 3.1.12)
   bootsnap
   bootstrap-sass (= 3.3.7)
-  bootstrap-will_paginate (= 0.0.10)
   byebug (= 9.0.6)
   coffee-rails (= 4.2.2)
   faker (= 1.7.3)
@@ -234,7 +230,7 @@ DEPENDENCIES
   minitest (= 5.10.3)
   minitest-reporters (= 1.1.14)
   pg (= 0.20.0)
-  puma (= 3.9.1)
+  puma (= 3.12.4)
   rails (= 5.2.3)
   rails-controller-testing (= 1.0.2)
   sass-rails (= 5.0.6)
@@ -245,7 +241,6 @@ DEPENDENCIES
   tzinfo-data
   uglifier (= 3.2.0)
   web-console (= 3.5.1)
-  will_paginate (= 3.0.0)
 
 BUNDLED WITH
    2.1.4
