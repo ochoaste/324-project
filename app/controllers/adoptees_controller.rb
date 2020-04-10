@@ -3,7 +3,7 @@ class AdopteesController < ApplicationController
 # before_action :logged_in_user, only: [:index, :edit, :update]
 
 def index
- @adoptees = Adoptee.paginate(page: params[:page]) 
+@adoptees = Adoptee.all  
  end
 
 def show
