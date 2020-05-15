@@ -4,16 +4,23 @@
 <section class = "user_info">
 
 <%= gravatar_for @adoptee %>
-
-<h1>
+<br>
+<h1 style="font-size: 23 px;">
 <%= @adoptee.name %>
 </h1>
-<h2>
-Age: <%= @adoptee.age %> | Email: <%=  @adoptee.email %>
-</h2>
-<p>
-<b>Personality:</b> <br> <%= @adoptee.personality %>
-</p>
+<br>
+<br>
+<h1 style="font-size: 16px;">
+Age: <%= @adoptee.age %>
+</h1>
+<br>
+<h1 style="font-size: 16 px;">
+Email: <%=  @adoptee.email %>
+</h1>
+<br>
+<h1 style="font-size: 16 px;">
+Personality: <br> <%= @adoptee.personality %>
+</h1>
 
 </section>
 </aside>
